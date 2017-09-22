@@ -1,1 +1,1 @@
-# frien
+# friend-finder
