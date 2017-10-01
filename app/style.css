@@ -1,0 +1,19 @@
+html {
+	font-family: 'Indie Flower', cursive;
+
+}
+
+body {
+	background-color: grey; 
+	font-family: 'Indie Flower', cursive;
+}
+
+#content-area {
+	background-color: #fff;
+	font-family: 'Indie Flower', cursive;
+}
+
+.footer {
+	color: white; 
+	font-family: 'Indie Flower', cursive;
+}
