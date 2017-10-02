@@ -11,7 +11,7 @@
 
 	<!-- Font Awesome Glyphicons -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="/assets/style.css">
 
 </head>
 <body>
@@ -32,7 +32,7 @@
 
 		<h3><strong>Question 1</strong></h3>
 		<h4>You like milkbones</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q1">
+	 	<select data-placeholder="" class="selected" id="q1">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -43,7 +43,7 @@
 
 		<h3><strong>Question 2</strong></h3>
 		<h4>Generally speaking, 3-4 walks per day is awesome</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q2">
+	 	<select data-placeholder="" class="selected" id="q2">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -55,7 +55,7 @@
 
 		<h3><strong>Question 3</strong></h3>
 		<h4>You find it easy to stay relaxed and focused even when there is a squirrel in your immediate vicinity.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q3">
+	 	<select data-placeholder="" class="selected" id="q3">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -67,7 +67,7 @@
 
 		<h3><strong>Question 4</strong></h3>
 		<h4>You always do everything just out of sheer curiosity.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q4">
+	 	<select data-placeholder="" class="selected" id="q4">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -79,7 +79,7 @@
 
 		<h3><strong>Question 5</strong></h3>
 		<h4>You like sticks.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q5">
+	 	<select data-placeholder="" class="selected" id="q5">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -91,7 +91,7 @@
 
 		<h3><strong>Question 6</strong></h3>
 		<h4>It is often difficult for you to understand other species' use of language.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q6">
+	 	<select data-placeholder="" class="selected" id="q6">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -103,7 +103,7 @@
 
 		<h3><strong>Question 7</strong></h3>
 		<h4>He who barks loudest, wins.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q7">
+	 	<select data-placeholder="" class="selected" id="q7">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -114,7 +114,7 @@
 
 		<h3><strong>Question 8</strong></h3>
 		<h4>Can we go for a walk?</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q8">
+	 	<select data-placeholder="" class="selected" id="q8">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -125,7 +125,7 @@
 
 		<h3><strong>Question 9</strong></h3>
 		<h4>You think that everyone’s paws should be respected regardless of whether they are muddy or not.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q9">
+	 	<select data-placeholder="" class="selected" id="q9">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -136,7 +136,7 @@
 
 		<h3><strong>Question 10</strong></h3>
 		<h4>You feel more energetic after spending time with a group of dogs.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q10">
+	 	<select data-placeholder="" class="selected" id="q10">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -154,7 +154,7 @@
 		<hr>
 	    <footer class="footer">
 	      <div class="container">
-		        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/BrienHall/friend-finder">GitHub Repo</a></p>
+		        <p><a href="https://github.com/BrienHall/friend-finder">GitHub Repo</a></p>
 	      </div>
 	    </footer>
 
@@ -190,14 +190,12 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h2 class="modal-title"><strong>Error</strong></h2>
+	        <h1 class="modal-title"><strong>Error</strong></h1>
 	      </div>
 	      <div class="modal-body">
-	        <h2>Please fill out all fields before submitting!</h2>
+	        <h4>Please complete all fields before submitting!</h4>
 	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      </div>
+	     
 	    </div>
 
 	  </div>
@@ -214,7 +212,7 @@
 		        isValid = false;
 		  });
 
-		  $('.chosen-select').each(function() {
+		  $('.selected').each(function() {
 
 		  	if( $(this).val() === "")
 		  		isValid = false
