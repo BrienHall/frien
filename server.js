@@ -13,6 +13,7 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
 
 app.use('/assets', express.static(path.join(__dirname, 'app/public/assets')));
+app.use('/img', express.static(path.join(__dirname, 'img')));
 
 require('./app/routing/apiRoutes')(app);
 require('./app/routing/htmlRoutes')(app);
