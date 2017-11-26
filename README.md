@@ -1,3 +1,3 @@
 # friend-finder
 
-low budg Tinder for dogs
+A low-budg Tinder for doggos
