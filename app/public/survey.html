@@ -6,7 +6,7 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="/assets/style.css">
 </head>
@@ -15,18 +15,31 @@
 		<h2>Survey Questions</h2>
 		<hr>
 
-		<h3><strong>About You</strong></h3>
-		<h4>Name (Required)</h4>
-		<input type="text" name="" id="name" class="form-control" required >
+		<h2>About You</h2>
+		<div class="form-group" id="userInput1">
+			<label for="user" >Name (required)</label>
+			<input type='text' class="form-control" id="user">
+		</div>
+		     
+		<div class="form-group has-error hidden" id="inputError1">
+		  <label class="control-label" for="inputError1">Enter Name</label>
+		  <input type="text" class="form-control" id="inputErrorUser">
+		</div>
 
-		<h4>Link to Photo Image (Required)</h4>
-		<input type="text" name="" id="photo" class="form-control" required >
-
+			<div class="form-group" id="userInput2">
+			<label for="user">Link to photo image (required)</label>
+			<input type='text' class="form-control" id="photoLink">
+		</div>
+		     
+		<div class="form-group has-error hidden" id="inputError2">
+		  <label class="control-label" for="inputError1">Enter Photo Link</label>
+		  <input type="text" class="form-control" id="inputErrorPhoto">
+		</div>
 		<hr>
 
 		<h3><strong>Question 1</strong></h3>
 		<h4>You like milkbones</h4>
-	 	<select data-placeholder="" class="selected" id="q1">
+	 	<select data-placeholder="" class="chosen-select" id="q1">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -37,7 +50,7 @@
 
 		<h3><strong>Question 2</strong></h3>
 		<h4>Generally speaking, 3-4 walks per day is awesome</h4>
-	 	<select data-placeholder="" class="selected" id="q2">
+	 	<select data-placeholder="" class="chosen-select" id="q2">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -49,7 +62,7 @@
 
 		<h3><strong>Question 3</strong></h3>
 		<h4>You find it easy to stay relaxed and focused even when there is a squirrel in your immediate vicinity.</h4>
-	 	<select data-placeholder="" class="selected" id="q3">
+	 	<select data-placeholder="" class="chosen-select" id="q3">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -61,7 +74,7 @@
 
 		<h3><strong>Question 4</strong></h3>
 		<h4>You always do everything just out of sheer curiosity.</h4>
-	 	<select data-placeholder="" class="selected" id="q4">
+	 	<select data-placeholder="" class="chosen-select" id="q4">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -73,7 +86,7 @@
 
 		<h3><strong>Question 5</strong></h3>
 		<h4>You like sticks.</h4>
-	 	<select data-placeholder="" class="selected" id="q5">
+	 	<select data-placeholder="" class="chosen-select" id="q5">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -85,7 +98,7 @@
 
 		<h3><strong>Question 6</strong></h3>
 		<h4>It is often difficult for you to understand other species' use of language.</h4>
-	 	<select data-placeholder="" class="selected" id="q6">
+	 	<select data-placeholder="" class="chosen-select" id="q6">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -97,7 +110,7 @@
 
 		<h3><strong>Question 7</strong></h3>
 		<h4>He who barks loudest, wins.</h4>
-	 	<select data-placeholder="" class="selected" id="q7">
+	 	<select data-placeholder="" class="chosen-select" id="q7">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -108,7 +121,7 @@
 
 		<h3><strong>Question 8</strong></h3>
 		<h4>Can we go for a walk?</h4>
-	 	<select data-placeholder="" class="selected" id="q8">
+	 	<select data-placeholder="" class="chosen-select" id="q8">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -119,7 +132,7 @@
 
 		<h3><strong>Question 9</strong></h3>
 		<h4>You think that everyone’s paws should be respected regardless of whether they are muddy or not.</h4>
-	 	<select data-placeholder="" class="selected" id="q9">
+	 	<select data-placeholder="" class="chosen-select" id="q9">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -130,7 +143,7 @@
 
 		<h3><strong>Question 10</strong></h3>
 		<h4>You feel more energetic after spending time with a group of dogs.</h4>
-	 	<select data-placeholder="" class="selected" id="q10">
+	 	<select data-placeholder="" class="chosen-select" id="q10">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -142,7 +155,7 @@
 		<br>
 		<br>
 
-			<button type="button" class="btn btn-success btn-lg" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
+			<button type="submit" class="btn btn-success btn-lg" id="submit"><i class="fa fa-check-circle" aria-hidden="true" data-toggle="modal" data-target="myModal"></i> Submit</button>
 
 		<hr>
 	    <footer class="footer">
@@ -150,84 +163,84 @@
 		        <p><a href="https://github.com/BrienHall/friend-finder">GitHub Repo</a></p>
 	      </div>
 	    </footer>
+	</div>
+	
+	<div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Best Friend Match!</h4>
+				</div>
+				<div class="modal-body" id="modal-name">
+				</div>
+				<img src="" class="modal-body img-responsive" id="modal-img">
+				</img>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of modal -->
+
 
 	</div>
-
-	<!-- results modal -->
-	<div id="resultsModal" class="modal fade" role="dialog">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h2 class="modal-title"><strong>Best Match</strong></h2>
-	      </div>
-	      <div class="modal-body">
-	        <h2 id="matchName"></h2>
-	        <img src="img/chippy.jpg" class="img-fluid" id="matchImg" style="width: 100%" alt="">
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-
-	<!---error modal-->
-	<div id="formError" class="modal fade" role="dialog">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h1 class="modal-title"><strong>Error</strong></h1>
-	      </div>
-	      <div class="modal-body">
-	        <h4>Please complete all fields before submitting!</h4>
-	      </div>
-	     
-	    </div>
-
-	  </div>
-	</div>
-
-  <script type="text/javascript">
-    $("#submit").on("click", function(){
-
-    	function validateForm() {
-		  var isValid = true;
-		  $('.form-control').each(function() {
-		    if ( $(this).val() === '' )
-		        isValid = false;
-		  });
-
-		  $('.selected').each(function() {
-
-		  	if( $(this).val() === "")
-		  		isValid = false
-		  })
-		  return isValid;
+	
+	<script >
+	//add information to tableData array
+	$("#submit").on("click", function(event) {
+		event.preventDefault()
+		console.log($("#user").val())
+		//validate that there is info in user and photo
+		if($("#user").val() == ""){
+			$('#userInput1').addClass("hidden")
+			$('#inputError1').removeClass("hidden")
+			alert('Please fill out all forms before submitting!')
+			$("#user").empty()
+			//prevent form from submitting
+			return false
 		}
-		
-		if (validateForm() == true)
-		{
-	    	var userData = {
-	    		name: $("#name").val(),
-	    		photo: $("#photo").val(),
-	    		scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
-	    	}
-	    	var currentURL = window.location.origin;
-	    	$.post(currentURL + "/api/friends", userData, function(data){
-	    		$("#matchName").text(data.name);
-	    		$('#matchImg').attr("src", data.photo);
-		    	$("#resultsModal").modal('toggle');
+		else if($("#photoLink").val() == ""){
+			$('#userInput2').addClass("hidden")
+			$('#inputError2').removeClass("hidden")
+			alert('Please fill out all forms before submitting!')
+			//prevent form from submitting
+			return false
+		}
 
-	    	});
+		//add new friend in object form
+		var newFriend = {
+			name: $("#user").val().trim(),
+			photo: $("#photoLink").val().trim(),
+			scores: [
+				$("#q1").val(),
+				$("#q2").val(),
+				$("#q3").val(),
+				$("#q4").val(),
+				$("#q5").val(),
+				$("#q6").val(),
+				$("#q7").val(),
+				$("#q8").val(),
+				$("#q9").val(),
+				$("#q10").val()
+			]
 		}
-		else
-		{
-			$('#formError').modal('show');
-		}
-    	return false;
-    });
-  </script>
+
+		console.log(newFriend)
+
+		//ajax post call w .done method
+		$.post("/api/new", newFriend).done(function(data){
+			console.log("adding friend...")
+			// console.log('best match '+ data.name)
+
+			//fill in the modal with results from the ajax call
+			$("#modal-name").text(data.name);
+			$("#modal-img").attr("src", data.photo);
+			$('#myModal').modal('show');
+		})
+	})
+
+	</script>
 </body>
 </html>

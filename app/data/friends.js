@@ -1,7 +1,7 @@
 module.exports = [
 
 {
-  "name": "chippy",
+  "name": "Chippy",
   "photo": "../img/chippy.JPG",
   "scores":[
       5,
@@ -18,7 +18,7 @@ module.exports = [
 },
 
 {
-  "name": "francis",
+  "name": "Francis",
   "photo": "../img/frances.jpeg",
   "scores":[
       4,
@@ -36,7 +36,7 @@ module.exports = [
 
 
 {
-  "name": "gunnar",
+  "name": "Gunnar",
   "photo": "../img/gunnar.jpeg",
   "scores":[
       1,
@@ -54,7 +54,7 @@ module.exports = [
 
 
 {
-  "name": "midnight",
+  "name": "Midnight",
   "photo": "../img/midnight.jpeg",
   "scores":[
       1,
@@ -72,7 +72,7 @@ module.exports = [
 
 
 {
-  "name": "ralph",
+  "name": "Ralph",
   "photo": "../img/ralph.jpg",
   "scores":[
       1,
@@ -90,7 +90,7 @@ module.exports = [
 
 
 {
-  "name": "scout",
+  "name": "Scout",
   "photo": "../img/scout.jpeg",
   "scores":[
       4,
